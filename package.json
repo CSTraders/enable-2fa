@@ -1,0 +1,27 @@
+{
+  "name": "@cstraders/enable-2fa",
+  "version": "0.0.0",
+  "description": "Enable 2FA for Steam Accounts and output the shared secret",
+  "main": "dist/index.js",
+  "bin": {
+    "steam-enable-2fa": "dist/index.js"
+  },
+  "repository": "https://github.com/cstraders/enable-2fa",
+  "author": "Nikolai Kolodziej <github@kldzj.dev>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "prompts": "^2.4.2",
+    "steam-user": "^4.28.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/prompts": "^2.4.4",
+    "@types/steam-user": "^4.26.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  }
+}
